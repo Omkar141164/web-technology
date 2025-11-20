@@ -14,11 +14,11 @@
         <h1>Agriculture Support Portal</h1>
         <p class="subtitle">Find the best crop based on soil & weather</p>
 
-        <form class="glass-card" action="recommendation.html">
+        <form class="glass-card" action="recommendation.php" method="POST">
             
             <div class="input-box">
                 <label>Soil Type</label>
-                <select required>
+                <select name="soil" required>
                     <option value="">Select Soil</option>
                     <option>Black Soil</option>
                     <option>Red Soil</option>
@@ -29,12 +29,12 @@
 
             <div class="input-box">
                 <label>Temperature (°C)</label>
-                <input type="number" required placeholder="e.g. 30">
+                <input type="number" name="temperature" required placeholder="e.g. 30">
             </div>
 
             <div class="input-box">
                 <label>Rainfall (mm)</label>
-                <input type="number" required placeholder="e.g. 120">
+                <input type="number" name="rainfall" required placeholder="e.g. 120">
             </div>
 
             <button class="btn">Get Recommendation</button>
