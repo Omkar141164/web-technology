@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Support Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1>Agriculture Support Portal</h1>
+        <p class="subtitle">Find the best crop based on soil & weather</p>
+
+        <form class="glass-card" action="recommendation.html">
+            
+            <div class="input-box">
+                <label>Soil Type</label>
+                <select required>
+                    <option value="">Select Soil</option>
+                    <option>Black Soil</option>
+                    <option>Red Soil</option>
+                    <option>Clay Soil</option>
+                    <option>Sandy Soil</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Temperature (°C)</label>
+                <input type="number" required placeholder="e.g. 30">
+            </div>
+
+            <div class="input-box">
+                <label>Rainfall (mm)</label>
+                <input type="number" required placeholder="e.g. 120">
+            </div>
+
+            <button class="btn">Get Recommendation</button>
+        </form>
+    </div>
+
+</body>
+</html>
